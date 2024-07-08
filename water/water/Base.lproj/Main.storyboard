@@ -246,11 +246,45 @@
                         <segue destination="fWj-8b-rpe" kind="relationship" relationship="viewControllers" id="pgF-hq-ecN"/>
                         <segue destination="xq3-nQ-E1V" kind="relationship" relationship="viewControllers" id="grC-Yg-h1p"/>
                         <segue destination="JGU-W7-JZf" kind="relationship" relationship="viewControllers" id="LR3-Lj-8mw"/>
+                        <segue destination="dua-ep-NB9" kind="relationship" relationship="viewControllers" id="tGl-Db-j1f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNO-wO-lR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2752" y="-765"/>
+        </scene>
+        <!--Статистика-->
+        <scene sceneID="lue-gq-fTB">
+            <objects>
+                <viewController id="dua-ep-NB9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iqo-rY-hws">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uhh-PY-if8">
+                                <rect key="frame" x="0.0" y="103" width="393" height="617"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="133" id="fcn-b7-goc">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="133"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fcn-b7-goc" id="c4R-8Z-eab">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="133"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aXJ-AV-FyH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Статистика" selectedImage="calendar" catalog="system" id="4TU-Gl-JaI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFb-0T-fFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3736.6412213740455" y="-1430.2816901408451"/>
         </scene>
         <!--Моя вода-->
         <scene sceneID="RO8-Cb-spQ">
@@ -316,6 +350,7 @@
     </scenes>
     <resources>
         <image name="Image" width="430" height="932"/>
+        <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="drop" catalog="system" width="96" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
