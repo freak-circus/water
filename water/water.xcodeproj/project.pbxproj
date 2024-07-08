@@ -18,6 +18,8 @@
 		013131BF2C39E84D00B4511F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013131BE2C39E84D00B4511F /* ViewController1.swift */; };
 		013131C32C3ABC7400B4511F /* MyWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013131C22C3ABC7400B4511F /* MyWater.swift */; };
 		0147E3E62C3B347900735A0A /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147E3E52C3B347900735A0A /* test.swift */; };
+		5EDF1B1F2C3BFCD600D5EC45 /* WaterIntekeHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1B1D2C3BFCD500D5EC45 /* WaterIntekeHistory.swift */; };
+		5EDF1B222C3BFCF400D5EC45 /* WaterIntakeDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF1B212C3BFCF400D5EC45 /* WaterIntakeDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		013131BE2C39E84D00B4511F /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		013131C22C3ABC7400B4511F /* MyWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWater.swift; sourceTree = "<group>"; };
 		0147E3E52C3B347900735A0A /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		5EDF1B1D2C3BFCD500D5EC45 /* WaterIntekeHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaterIntekeHistory.swift; path = ../../../../../Desktop/WaterIntekeHistory.swift; sourceTree = "<group>"; };
+		5EDF1B212C3BFCF400D5EC45 /* WaterIntakeDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,10 @@
 				0147E3E52C3B347900735A0A /* test.swift */,
 				013131C22C3ABC7400B4511F /* MyWater.swift */,
 				013131BE2C39E84D00B4511F /* ViewController1.swift */,
+				5EDF1B1D2C3BFCD500D5EC45 /* WaterIntekeHistory.swift */,
 				013131972C39E52500B4511F /* Assets.xcassets */,
 				0131319C2C39E52500B4511F /* Info.plist */,
+				5EDF1B212C3BFCF400D5EC45 /* WaterIntakeDay.swift */,
 			);
 			path = water;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 				013131C32C3ABC7400B4511F /* MyWater.swift in Sources */,
 				0131318F2C39E52400B4511F /* AppDelegate.swift in Sources */,
 				013131912C39E52400B4511F /* SceneDelegate.swift in Sources */,
+				5EDF1B222C3BFCF400D5EC45 /* WaterIntakeDay.swift in Sources */,
+				5EDF1B1F2C3BFCD600D5EC45 /* WaterIntekeHistory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
