@@ -84,7 +84,6 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         
         cell.streakLabel.text = "Дней подряд: \(streak)"
         if streak == bestStreak {
-            cell.streakLabel.textColor = .green
             cell.streakLabel.text! += " 🏆"
         } else if streak > 0 {
             cell.streakLabel.text! += " 🔥"
