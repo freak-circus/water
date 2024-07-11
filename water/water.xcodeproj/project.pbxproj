@@ -17,6 +17,10 @@
 		013131BF2C39E84D00B4511F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013131BE2C39E84D00B4511F /* ViewController1.swift */; };
 		013131C32C3ABC7400B4511F /* MyWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013131C22C3ABC7400B4511F /* MyWater.swift */; };
 		0147E3E62C3B347900735A0A /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0147E3E52C3B347900735A0A /* test.swift */; };
+		5EEF60F62C3FCA430015B4EF /* WaterIntakeHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF60F22C3FCA430015B4EF /* WaterIntakeHistory.swift */; };
+		5EEF60F72C3FCA430015B4EF /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF60F32C3FCA430015B4EF /* HistoryCell.swift */; };
+		5EEF60F82C3FCA430015B4EF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF60F42C3FCA430015B4EF /* HistoryViewController.swift */; };
+		5EEF60F92C3FCA430015B4EF /* WaterIntakeDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF60F52C3FCA430015B4EF /* WaterIntakeDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		013131BE2C39E84D00B4511F /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		013131C22C3ABC7400B4511F /* MyWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWater.swift; sourceTree = "<group>"; };
 		0147E3E52C3B347900735A0A /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		5EEF60F22C3FCA430015B4EF /* WaterIntakeHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterIntakeHistory.swift; sourceTree = "<group>"; };
+		5EEF60F32C3FCA430015B4EF /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		5EEF60F42C3FCA430015B4EF /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5EEF60F52C3FCA430015B4EF /* WaterIntakeDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterIntakeDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,10 @@
 				013131BE2C39E84D00B4511F /* ViewController1.swift */,
 				013131972C39E52500B4511F /* Assets.xcassets */,
 				0131319C2C39E52500B4511F /* Info.plist */,
+				5EEF60F32C3FCA430015B4EF /* HistoryCell.swift */,
+				5EEF60F42C3FCA430015B4EF /* HistoryViewController.swift */,
+				5EEF60F52C3FCA430015B4EF /* WaterIntakeDay.swift */,
+				5EEF60F22C3FCA430015B4EF /* WaterIntakeHistory.swift */,
 			);
 			path = water;
 			sourceTree = "<group>";
@@ -244,12 +256,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEF60F92C3FCA430015B4EF /* WaterIntakeDay.swift in Sources */,
 				013131BF2C39E84D00B4511F /* ViewController1.swift in Sources */,
 				0147E3E62C3B347900735A0A /* test.swift in Sources */,
 				013131932C39E52400B4511F /* ViewController.swift in Sources */,
 				011578B82C3F4652006B2121 /* LoadingViewController.swift in Sources */,
+				5EEF60F72C3FCA430015B4EF /* HistoryCell.swift in Sources */,
+				5EEF60F82C3FCA430015B4EF /* HistoryViewController.swift in Sources */,
 				013131C32C3ABC7400B4511F /* MyWater.swift in Sources */,
 				0131318F2C39E52400B4511F /* AppDelegate.swift in Sources */,
+				5EEF60F62C3FCA430015B4EF /* WaterIntakeHistory.swift in Sources */,
 				013131912C39E52400B4511F /* SceneDelegate.swift in Sources */,
 				011578B62C3F37EE006B2121 /* User.swift in Sources */,
 			);
