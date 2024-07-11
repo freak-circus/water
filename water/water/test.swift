@@ -26,17 +26,14 @@ class test: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     
+    var gender: Bool = false
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Показываем полноэкранное изображение
-        fullScreenImage.isHidden = false
-        
-        // Настраиваем таймер для скрытия изображения и настройки UI
-        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { [weak self] _ in
-            self?.fullScreenImage.isHidden = true
-            self?.setupUI()
-        }
         
         // Setup initial UI elements
         setupInitialQuestions()
@@ -95,15 +92,15 @@ class test: UIViewController {
         ageTextField.keyboardType = .numberPad
     }
     
-    func setupGoalsCheckboxes() {
-        let goals = ["Пить больше воды", "Снизить вес", "Улучшить состояние кожи", "Вести здоровый образ жизни", "Улучшить пищеварение"]
-        for goal in goals {
-            let checkbox = UIButton(type: .system)
-            checkbox.setTitle(goal, for: .normal)
-            checkbox.addTarget(self, action: #selector(goalCheckboxTapped(_:)), for: .touchUpInside)
-            goalsStackView.addArrangedSubview(checkbox)
-        }
-    }
+//    func setupGoalsCheckboxes() {
+//        let goals = ["Пить больше воды", "Снизить вес", "Улучшить состояние кожи", "Вести здоровый образ жизни", "Улучшить пищеварение"]
+//        for goal in goals {
+//            let checkbox = UIButton(type: .system)
+//            checkbox.setTitle(goal, for: .normal)
+//            checkbox.addTarget(self, action: #selector(goalCheckboxTapped(_:)), for: .touchUpInside)
+//            goalsStackView.addArrangedSubview(checkbox)
+//        }
+//    }
     
     func setupInitialQuestions() {
         questionsStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
@@ -111,6 +108,16 @@ class test: UIViewController {
         questionLabel.numberOfLines = 0
         questionLabel.textAlignment = .center
         questionsStackView.addArrangedSubview(questionLabel)
+    }
+    
+    @IBAction func changeGenderSegment(_ sender: Any) {
+        guard let segment = sender as? UISegmentedControl else { return }
+        switch segment.selectedSegmentIndex {
+        case 0: gender = true
+        case 1: gender = false
+        default:
+            break
+        }
     }
     
     func updateQuestion() {
@@ -237,14 +244,21 @@ class test: UIViewController {
     }
     
     func navigateToNextScreen() {
+        guard
+            let age = ageTextField.text,
+            let weight = weightTextField.text,
+            let height = heightTextField.text,
+            let name = nameTextField.text
+        else { return }
+        let user = User(age: Int(age) ?? 15, gender: gender, weight: Int(weight) ?? 50, height: Int(height) ?? 150, name: name, total: calculateWaterAmount())
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(user)
+            UserDefaults.standard.set(data, forKey: "user")
+        } catch {
+            print("failed")
+        }
         performSegue(withIdentifier: "NextViewController", sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "NextViewController" {
-            if let myWaterVC = segue.destination as? MyWater {
-                myWaterVC.totalWaterAmount = calculateWaterAmount() / 1000.0 
-            }
-        }
-    }
 }
+
