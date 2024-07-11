@@ -35,23 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2G-8y-5lo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5790" y="-6"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="1tS-Qf-bLB">
-            <objects>
-                <viewController id="JGU-W7-JZf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RuF-P2-lz4">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="f77-sc-UGo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="plus" catalog="system" id="hRv-ex-Mal"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lqt-rC-aSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4848" y="-6"/>
+            <point key="canvasLocation" x="4662" y="-37"/>
         </scene>
         <!--Test-->
         <scene sceneID="44b-rl-ZbW">
@@ -287,7 +271,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="xq3-nQ-E1V" kind="relationship" relationship="viewControllers" id="N95-JT-iXX"/>
-                        <segue destination="JGU-W7-JZf" kind="relationship" relationship="viewControllers" id="GVx-pR-KDw"/>
                         <segue destination="fWj-8b-rpe" kind="relationship" relationship="viewControllers" id="6bt-yr-Uty"/>
                         <segue destination="5kO-TJ-HLt" kind="relationship" relationship="viewControllers" id="4xF-uM-tnJ"/>
                     </connections>
@@ -363,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bp-qH-fHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6730.5343511450383" y="-6.3380281690140849"/>
+            <point key="canvasLocation" x="5604" y="-37"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -374,7 +357,6 @@
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="drop" catalog="system" width="96" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
